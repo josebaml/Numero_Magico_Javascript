@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrapper">
+        <header>
+            <h1>Intenta adivinar el número mágico</h1>
+            
+            <p>Seis intentos para demostrar que eres más inteligente que la máquina!</p> 
+            <p>Sólo sabrás si tu número es mayor o menor que el suyo.</p>
+            <p>¡¡¡ Mucha suerte !!!</p>
+        </header>
+        <section>
+            <input type="number" id="numero" placeholder="Ingrese un número" min= "1" max="100" 
+            title="números del 1 al 100" required autofocus>
+            <!--
+                <div class="botones">
+                    
+                    <button id="resetear">Resetear</button>
+                </div>
+            -->
+
+            <button id="enviar">Enviar</button>
+            
+            <div class="salida" id="salida"></div>
+        </section>
+        <footer>
+            <a class = "color" href="https://www.josebamoreno.es">© 2021 Joseba Moreno</a>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+:root {
+  /* Colors */
+  --green: #008000;
+  --green2: #176816;
+  --white: #fafcf9;
+  --orange: #f7931a;
+  --red: red;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--green);
+  /*font-family: "DM Sans", sans-serif;*/
+  letter-spacing: 1.2px;
+}
+.wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+header, section, footer{
+  width: 100%;
+  max-width: 75rem;
+}
+header{
+  text-align: center;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+header h1{
+  padding-bottom: 1em;
+  /*font-size: 28px;*/
+  font-size: 7vw;
+}
+
+header p{
+  font-size: 18px;
+  padding-bottom: 1em;
+}
+
+section{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 31.25rem;
+}
+
+input, button, .salida{
+  width: 100%;
+  margin: 1em auto;
+  font-size: 20px;
+  border-radius: 10px;
+}
+input{
+  padding: 1em;
+  border: 1px solid var(--green2);
+  text-align: center;
+  box-shadow: 9px 9px 9px rgba(0,0,0,.06);
+}
+
+.invalid{
+    margin-top: 1em;
+    border: 1px solid var(--red);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.valid{
+  border: 1px solid var(--white);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.opacity_50{
+  opacity: 0.5;
+}
+
+.opacity_1{
+  opacity: 1;
+}
+
+button{
+  padding: 2em 1em;
+  background-color: var(--orange);
+  border: 1px solid var(--green2);
+  color: var(--white);
+  box-shadow: 9px 9px 9px rgba(0,0,0,.06);
+  margin: 1em auto;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.salida{
+  margin-top: 1em;
+  text-align: center;
+  color: var(--white);
+  width: auto;
+}
+
+footer{
+  padding: .5em 0;
+  color: var(--white);
+  font-size: 16px;
+  text-align: center;
+}
+
+.color{
+  transition: color .3s ease-in-out;
+}
+
+.color:hover {
+  color: var(--orange); 
+}
+
+/**** Media Queries *****/
+@media screen and (min-width: 500px) {
+  input{
+    padding: 1.5em 1em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header h1{
+    font-size: 5.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  footer{
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header h1{
+    font-size: 4.5vw;
+  }
+}
